@@ -1,7 +1,10 @@
-let numero1 = 2;
-let numero2 = 7;
+let valor1 = "Abacaxi";
+let valor2 = 7;
+let auxiliar = valor1;
 
-let a1 = numero2;
-let a2 = numero1;
+valor1 = valor2;
+valor2 = auxiliar;
 
-console.log(a1)
+console.log("A variável 1 é: " + valor1 + ", e a variável 2 é: " + valor2 + ".")
+
+// console.log(a1)

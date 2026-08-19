@@ -24,8 +24,8 @@ let quantidade = parseInt(prompt("Digite a quantidade do produto em estoque: "))
 let faturamento = quantidade * preco
 
 
-prompt("\n----- RELATÓRIO -----");
+console.log("\n----- RELATÓRIO -----");
 console.log("Nome do produto: " + produto)
-console.log("Caso venda todos os produtos em estoque, o faturamento será de: " + faturamento)
+console.log("Caso venda todos os produtos em estoque, o faturamento será de: R$" + faturamento)
 
 

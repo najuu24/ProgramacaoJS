@@ -17,3 +17,4 @@ let preco2 = prompt("Digite o preço de " + nome2 + ": R$");
 console.log("\n----- RELATÓRIO -----");
 console.log(nome1 + " - R$ " + preco);
 console.log(nome2 + " - R$ " + preco2);
+

@@ -14,6 +14,9 @@ if(idade > 99) {
 }
 if(idade <= 0){
     console.log("Idade inválida! Digite uma idade positiva.")
+} else{
+    console.log("Idade válida!")
 }
 
 console.log("A idade digitada foi: " + idade)
+

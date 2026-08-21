@@ -27,5 +27,3 @@ let faturamento = quantidade * preco
 console.log("\n----- RELATÓRIO -----");
 console.log("Nome do produto: " + produto)
 console.log("Caso venda todos os produtos em estoque, o faturamento será de: R$" + faturamento)
-
-

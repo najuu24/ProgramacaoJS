@@ -10,7 +10,7 @@ Siga as instruções:
 **Entrega**: ao finalizar as atividades, faça um `commit` no Github e chame o professor para fazer a correção.
 
 ## 1. Negativo ou positivo
-Crie um programa que peça dois números para o usuário e, em seguida, responda se o número digitado é positivo ou negativo
+Crie um programa que peça um número para o usuário e, em seguida, responda se o número digitado é positivo ou negativo
 
 ## 2. O maior número
 Crie um programa que peça dois números para o usuário e, em seguida, mostre na tela qual é o maior número

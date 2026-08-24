@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelateria Alegria</title>
+</head>
+<body>
+
+    <h1>Gelateria Alegria</h1>
+    <p>Você tem: 💲 <strong id="textoDinheiro">0</strong></p>
+
+    <button onclick="venderSorvete()">Vender Sorvete</button>
+
+    <hr>
+
+    <ul>
+        <li>Carrinho de Sorvete - 💲 25 <button onclick="carrinhoSorvete()">COMPRAR</button></li>
+        <li>Freezer Grande - 💲 1000 <button>COMPRAR</button></li>
+        <li>Marca Gourmet - 💲 50.000 <button>COMPRAR</button></li>
+    </ul>
+
+    <script>
+
+        let dinheiro = 0
+        let dinheiroPorClique = 1
+
+        function venderSorvete(){
+            dinheiro += dinheiroPorClique;
+            document.getElementById("textoDinheiro").innerHTML = dinheiro
+        }
+
+        function carrinhoSorvete(){
+            if (dinheiro < 25){
+                alert("Dinheiro insuficiente!")
+            } else{
+                dinheiroPorClique += 1
+                dinheiro -= 25
+                document.getElementById("textoDinheiro").innerHTML = dinheiro
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

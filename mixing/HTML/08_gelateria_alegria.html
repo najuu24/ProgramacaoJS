@@ -10,12 +10,12 @@
     <h1>Gelateria Alegria</h1>
     <p>Você tem: 💲 <strong id="textoDinheiro">0</strong></p>
 
-    <button onclick="venderSorvete()">Vender Sorvete</button>
+    <img src="../ice_cream_PNG98220.png" width="100" onclick="venderSorvete()">Vender Sorvete</button>
 
     <hr>
 
     <ul>
-        <li>Carrinho de Sorvete - 💲 25 <button onclick="carrinhoSorvete()">COMPRAR</button></li>
+        <li>Carrinho de Sorvete - 💲<strong id="textoCarrinhoSorvete"> 25 </strong> <button onclick="carrinhoSorvete()">COMPRAR</button></li>
         <li>Freezer Grande - 💲 1000 <button>COMPRAR</button></li>
         <li>Marca Gourmet - 💲 50.000 <button>COMPRAR</button></li>
     </ul>
@@ -26,6 +26,7 @@
 
         let dinheiro = 0
         let dinheiroPorClique = 1
+        let custoCarrinhoSorvete = 25
 
         let custoCarrinhoSorvete = 25
 
@@ -45,12 +46,15 @@
         }
 
         function carrinhoSorvete(){
-            if (dinheiro < 25){
+            if (dinheiro < custoCarrinhoSorvete){
                 alert("Dinheiro insuficiente!")
             } else{
                 dinheiroPorClique += 1
-                dinheiro -= 25
+                dinheiro -= custoCarrinhoSorvete
                 document.getElementById("textoDinheiro").innerHTML = dinheiro
+
+                custoCarrinhoSorvete += parseInt(custoCarrinhoSorvete * 0.2)
+                document.getElementById("textoCarrinhoSorvete").innerHTML = custoCarrinhoSorvete
             }
         }
 

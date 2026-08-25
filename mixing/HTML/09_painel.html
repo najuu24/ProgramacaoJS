@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+    <link rel="stylesheet" href="../CSS/09_painel.css">
+</head>
+<body>
+
+    <div id="painelLogin" class="painelLogin">
+        <h1>Login</h1>
+
+        <form>
+            <p>Digite seu usuário:</p>
+            <input id="inputUsuario"/>
+            
+            <p>Digite sua senha</p>
+            <input id="inputSenha" type="password">
+            
+            <br/><br/>
+            
+        </form>
+        
+        <button onclick="autenticar()">Entrar</button>
+    </div>
+    
+    <hr/>
+    
+    <div id="painelAdmin" class="painelAdmin">
+        <h1>Painel administrativo</h1>
+        <p>Você está logado como <strong>administrador</strong>.</p>
+        <button onclick="logout()">Sair da conta</button>
+    </div>
+    
+    <script src="../JS/09_painel.js"></script>
+</body>
+</html>
+

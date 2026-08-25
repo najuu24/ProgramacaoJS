@@ -1,0 +1,11 @@
+body{
+    background-color: #CCCCCC;
+}
+
+.painelAdmin{
+    display: none;
+}
+
+.painelLogin{
+    display: block;
+}

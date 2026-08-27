@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+
+</head>
+<body>
+
+    <h1>CRUD</h1>
+    <p>C = Create (inserir)</p>
+    <p>R = Read (buscar)</p>
+    <p>U = Update (atualizar)</p>
+    <p>D = Delete (remover)</p>
+
+    <hr/>
+
+    <input id="inputNome" placeholder="Digite um nome"/>
+    <button id="botaoSalvar" onclick="inserir()">Salvar</button>
+    <button id="botaoAlterar" style="display: none;" onclick="salvarAlteracao()">Salvar Alterações</button>
+
+    <ul id="listaUsuarios"></ul>
+
+    <script src="../JS/10_crud.js"></script>
+</body>
+</html>
